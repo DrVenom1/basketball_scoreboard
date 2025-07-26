@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title> BasketBall Scoreboard</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <h2 id="home-score">0</h2>
+                <button class="button-group" onclick="increment_home(1)">+1</button>
+                <button class="button-group" onclick="increment_home(2)">+2</button>
+                <button class="button-group" onclick="increment_home(3)">+3</button>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h2 id="guest-score">0</h2>
+                <button class="button-group" onclick="increment_guest(1)">+1</button>
+                <button class="button-group" onclick="increment_guest(2)">+2</button>
+                <button class="button-group" onclick="increment_guest(3)">+3</button>
+            </div>
+        </div>
+        <div class="reset-group">
+            <button id="reset-btn" onclick="reset_score()" >Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
